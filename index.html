@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro clock</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Pomodoro clock</h1>
+    <div class="title-container container">
+      <h3>Time</h3>
+      <h3>Cycles</h3>
+      <h3>Breack</h3>
+    </div>
+    <div class="container">
+      <p class=""></p>
+    </div>
+
+    <div class="init-container container">
+      <input
+        id="minutes"
+        type="number"
+        name="time"
+        placeholder="time"
+        min="0"
+      />
+
+      <input type="number" name="breack" placeholder="breack" min="0" />
+    </div>
+    <div class="time-container container">
+      <div id="time-start" class="timer">
+        <p id="min">0</p>
+        <p>:</p>
+        <p id="sec">00</p>
+      </div>
+
+      <p class="cycle-num">0</p>
+      <div id="time-breack" class="timer">
+        <p>0</p>
+        <p>:</p>
+        <p>00</p>
+      </div>
+    </div>
+
+    <div class="btn-container container">
+      <button type="button" class="btn" id="start">start</button>
+      <button type="button" class="btn" id="pause">pause</button>
+      <button type="button" class="btn" id="reset">reset</button>
+    </div>
+  </body>
+</html>
